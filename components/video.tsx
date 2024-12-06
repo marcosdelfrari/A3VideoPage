@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 interface VideoProps {
-  onClick: () => void; // Função passada pelo componente pai
+  onClick: () => void;
 }
 
 function Video({ onClick }: VideoProps) {
@@ -11,25 +11,24 @@ function Video({ onClick }: VideoProps) {
   const [showVideoDesktop, setShowVideoDesktop] = useState(false);
 
   const handleThumbnailClick = () => {
-    setShowVideo(true); // Mostra o vídeo
-    onClick(); // Notifica o componente pai sobre o clique
+    setShowVideo(true);
+    onClick();
   };
   const handleDesktopClick = () => {
-    setShowVideoDesktop(true); // Mostra o vídeo
-    onClick(); // Notifica o componente pai sobre o clique
+    setShowVideoDesktop(true);
+    onClick();
   };
 
   return (
     <div className=" flex z-[999] justify-center" style={{ cursor: "pointer" }}>
       {showVideo ? (
         <div>
-          {/* Exibe o vídeo apenas em dispositivos móveis */}
           <div className="sm:block bg-[#0d0d0d] rounded-2xl md:hidden">
             {" "}
             <iframe
               width="auto"
               height="500"
-              src="https://www.youtube.com/embed/CilPjv0knSY?autoplay=1" // Habilita autoplay
+              src="https://www.youtube.com/embed/CilPjv0knSY?autoplay=1"
               title="YouTube video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -40,24 +39,22 @@ function Video({ onClick }: VideoProps) {
         </div>
       ) : (
         <div>
-          {/* Exibe a thumbnail apenas em dispositivos móveis */}
           <img
-            src="/mobilevideo.png" // Thumbnail gerado pelo YouTube
+            src="/mobilevideo.png"
             alt="Video Thumbnail"
             className="rounded-2xl h-[500px] w-auto shadow-[2px_18px_32px_rgba(0,_0,_0,_0.5)] sm:block md:hidden"
-            onClick={handleThumbnailClick} // Clique na imagem para exibir o vídeo
+            onClick={handleThumbnailClick}
           />
         </div>
       )}
       {showVideoDesktop ? (
         <div>
-          {/* Exibe o vídeo apenas em dispositivos maiores (notebooks e acima) */}
           <div className="hidden sm:hidden md:block">
             {" "}
             <iframe
               width="668"
               height="400"
-              src="https://www.youtube.com/embed/fuCwKrVksZc?autoplay=1" // Habilita autoplay
+              src="https://www.youtube.com/embed/fuCwKrVksZc?autoplay=1"
               title="YouTube video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -68,12 +65,11 @@ function Video({ onClick }: VideoProps) {
         </div>
       ) : (
         <div>
-          {/* Exibe a thumbnail apenas em dispositivos maiores (notebooks e acima) */}
           <img
-            src="/desktopvideo.png" // Thumbnail gerado pelo YouTube
+            src="/desktopvideo.png"
             alt="Video Thumbnail"
             className="rounded-2xl h-[500px] w-auto shadow-[2px_18px_32px_rgba(0,_0,_0,_0.5)] hidden sm:hidden md:block"
-            onClick={handleDesktopClick} // Clique na imagem para exibir o vídeo
+            onClick={handleDesktopClick}
           />
         </div>
       )}

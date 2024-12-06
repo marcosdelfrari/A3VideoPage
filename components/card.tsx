@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { themeColors } from "@/lib/data"; // Importando as cores
+import { themeColors } from "@/lib/data";
 
 interface CardProps {
   image: string;

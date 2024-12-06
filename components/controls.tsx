@@ -9,7 +9,7 @@ function Controls() {
   const [showCard, setShowCard] = useState(false);
 
   const handleVideoClick = () => {
-    setShowCard(true); // Exibe o Card imediatamente ao clicar no contêiner
+    setShowCard(true);
   };
 
   return (
@@ -24,7 +24,6 @@ function Controls() {
           <Princing /> <Footer />
         </div>
       )}{" "}
-      {/* Renderiza o Card se showCard for true */}
     </motion.div>
   );
 }
