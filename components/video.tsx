@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image"; // Import do componente Image
 import { videoData } from "@/lib/data"; // Atualize o caminho conforme sua estrutura de pastas
 
 interface VideoProps {
@@ -39,10 +40,12 @@ function Video({ onClick }: VideoProps) {
         </div>
       ) : (
         <div>
-          <img
+          <Image
             src={videoData.mobile.thumbnail}
             alt="Video Thumbnail"
-            className="rounded-2xl h-[500px] w-auto shadow-[2px_18px_32px_rgba(0,_0,_0,_0.5)] sm:block md:hidden"
+            width={302}
+            height={500} // Ajuste as dimensões conforme necessário
+            className="rounded-2xl shadow-[2px_18px_32px_rgba(0,_0,_0,_0.5)] sm:block md:hidden"
             onClick={handleThumbnailClick}
           />
         </div>
@@ -51,8 +54,8 @@ function Video({ onClick }: VideoProps) {
         <div>
           <div className="hidden sm:hidden md:block">
             <iframe
-              width="668"
-              height="400"
+              width="960"
+              height="540"
               src={videoData.desktop.videoUrl}
               title="YouTube video"
               frameBorder="0"
@@ -64,10 +67,12 @@ function Video({ onClick }: VideoProps) {
         </div>
       ) : (
         <div>
-          <img
+          <Image
             src={videoData.desktop.thumbnail}
             alt="Video Thumbnail"
-            className="rounded-2xl h-[500px] w-auto shadow-[2px_18px_32px_rgba(0,_0,_0,_0.5)] hidden sm:hidden md:block"
+            width={960}
+            height={540}
+            className="rounded-2xl shadow-[2px_18px_32px_rgba(0,_0,_0,_0.5)] hidden sm:hidden md:block"
             onClick={handleDesktopClick}
           />
         </div>

@@ -45,11 +45,11 @@ export const themeColors = {
 // lib/data.ts
 export const videoData = {
   mobile: {
-    thumbnail: "/mobilevideo.png",
+    thumbnail: "/mobilevideo.jpg",
     videoUrl: "https://www.youtube.com/embed/CilPjv0knSY?autoplay=1",
   },
   desktop: {
-    thumbnail: "/desktopvideo.png",
+    thumbnail: "/desktopvideo.jpg",
     videoUrl: "https://www.youtube.com/embed/fuCwKrVksZc?autoplay=1",
   },
 };
