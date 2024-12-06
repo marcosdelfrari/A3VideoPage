@@ -12,7 +12,7 @@ interface CardProps {
 
 function Card({ image, alt, price, purchaseLink }: CardProps) {
   return (
-    <div className="card p-5 my-4 shadow-[10px_8px_40px_rgba(0,_0,_0,_0.5)] rounded-[30px]  flex flex-col items-center bg-white">
+    <div className="card max-w-[302px] p-5 my-4 shadow-[10px_8px_40px_rgba(0,_0,_0,_0.5)] rounded-[30px]  flex flex-col items-center bg-white">
       <Image
         src={image}
         alt={alt}

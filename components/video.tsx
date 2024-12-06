@@ -42,7 +42,7 @@ function Video({ onClick }: VideoProps) {
         <div>
           {/* Exibe a thumbnail apenas em dispositivos móveis */}
           <img
-            src="https://img.youtube.com/vi/CilPjv0knSY/0.jpg" // Thumbnail gerado pelo YouTube
+            src="/mobilevideo.png" // Thumbnail gerado pelo YouTube
             alt="Video Thumbnail"
             className="rounded-2xl h-[500px] w-auto shadow-[2px_18px_32px_rgba(0,_0,_0,_0.5)] sm:block md:hidden"
             onClick={handleThumbnailClick} // Clique na imagem para exibir o vídeo
@@ -70,8 +70,7 @@ function Video({ onClick }: VideoProps) {
         <div>
           {/* Exibe a thumbnail apenas em dispositivos maiores (notebooks e acima) */}
           <img
-            src="https://i.ytimg.com/vi/6gr6UYsjkS4/maxresdefault.jpg
-" // Thumbnail gerado pelo YouTube
+            src="/desktopvideo.png" // Thumbnail gerado pelo YouTube
             alt="Video Thumbnail"
             className="rounded-2xl h-[500px] w-auto shadow-[2px_18px_32px_rgba(0,_0,_0,_0.5)] hidden sm:hidden md:block"
             onClick={handleDesktopClick} // Clique na imagem para exibir o vídeo

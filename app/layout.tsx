@@ -17,20 +17,20 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${montserrat.className} bg-gray-50 text-gray-950 relative dark:bg-[#32794F] dark:text-gray-50 dark:text-opacity-90`}
+        className={`${montserrat.className} bg-gray-50 text-gray-950 relative dark:bg-[#0d0d0d] dark:text-gray-50 dark:text-opacity-90`}
       >
         {/* Efeito de fundo fixo (não afeta o scroll) */}
         <div
           className="fixed top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem]
-      sm:w-[68.75rem] sm:bg-[#32794F]"
+      sm:w-[68.75rem] sm:bg-[#0d0d0d]"
         ></div>
         <div
           className="fixed top-[-4rem] -z-10 left-[-35rem] sm:h-[15.25rem] sm:w-[50rem] h-[5.25rem] w-[42rem] rounded-full sm:blur-[12rem] blur-[3rem]
-      bg-[#DDF7E3]"
+      bg-[#c39e6f]"
         ></div>
         <div
           className="fixed bottom-[-4rem] -z-10 right-[-35rem] sm:h-[15.25rem] sm:w-[50rem] h-[5.25rem] w-[42rem] rounded-full sm:blur-[8rem] blur-[3rem]
-      bg-[#DDF7E3]"
+      bg-[#c39e6f]"
         ></div>
         <Image
           src="/grid.png"
