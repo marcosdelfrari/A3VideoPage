@@ -8,6 +8,10 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata = {
   title: "Simple Landing Page",
   description: "Video Page A3",
+  image: "/grid.png",
+  url: "https://www.exemplo.com",
+  author: "Nome da Empresa",
+  keywords: "landing page, video, opções de compra, produto",
 };
 
 export default function RootLayout({

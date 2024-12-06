@@ -42,7 +42,7 @@ export const themeColors = {
 //   buttonColor: "#32794f",
 //   buttonHoverColor: "#04411d",
 // };
-// lib/data.ts
+
 export const videoData = {
   mobile: {
     thumbnail: "/mobilevideo.jpg",
