@@ -11,7 +11,7 @@ function princing() {
       animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
       className="m-auto max-w-[900px]"
     >
-      <div className="flex justify-center text-[34px] p-5">
+      <div className="flex justify-center text-[34px] pt-16">
         <svg
           width="16"
           height="36"
