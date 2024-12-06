@@ -42,6 +42,17 @@ export const themeColors = {
 //   buttonColor: "#32794f",
 //   buttonHoverColor: "#04411d",
 // };
+// lib/data.ts
+export const videoData = {
+  mobile: {
+    thumbnail: "/mobilevideo.png",
+    videoUrl: "https://www.youtube.com/embed/CilPjv0knSY?autoplay=1",
+  },
+  desktop: {
+    thumbnail: "/desktopvideo.png",
+    videoUrl: "https://www.youtube.com/embed/fuCwKrVksZc?autoplay=1",
+  },
+};
 
 export const cardData = [
   {
